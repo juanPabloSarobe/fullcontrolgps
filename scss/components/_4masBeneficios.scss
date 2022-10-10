@@ -1,0 +1,182 @@
+/* ------------------seccion Mas beneficios */
+
+.borde{
+    border: solid 2px #339853;
+    overflow: hidden;
+    position: relative;
+}
+
+.colorIcono2{
+    color: #339853;
+    
+
+}
+.masBeneficiosPadre{
+
+    width: 80%;
+    max-width: 1250px;
+    margin:  40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 6fr) ;
+    grid-template-rows: repeat(2, 275px);
+    
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+
+.beneficioTitulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h4{
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.beneficioDetalleGeneral{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #339853;
+    transform: translateY(100%);
+    transition: all 0.4s ease-out;
+    z-index: 3;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.beneficioDetalleGeneral p{
+    margin-top: 15px;
+    width: 80%;
+}
+
+
+.beneficioTitulo1:hover .beneficioDetalle1{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio1:hover .beneficioDetalle1{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio2:hover .beneficioDetalle2{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio3:hover .beneficioDetalle3{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio4:hover .beneficioDetalle4{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio5:hover .beneficioDetalle5{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+.beneficio6:hover .beneficioDetalle6{ 
+    transform: translateY(0%);
+    transition: all 0.4s ease-in;
+}
+
+/* Seccion mas benefios extendida con bootstrap */
+
+#accordionExample, .accordion-item{
+    width: 80%;
+}
+
+.accordion {
+    --bs-accordion-color: #339853;
+    --bs-accordion-bg: #fff;
+        --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-btn-color: white;
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color:white;
+    --bs-accordion-active-bg: #339853;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+.acordionItem{
+    border-radius: 15px;
+}
+.accordionButtonColor{
+    background-color: #339853;
+
+}
+
+.list-group {
+    --bs-list-group-color: #212529;
+    --bs-list-group-bg: #f2f2f2;
+    --bs-list-group-border-color: none;
+}
+.itemFondo2{
+    background-color: #fdfdfd;
+}
+
+.accordion-body{
+    padding: 0px;
+}
+
+
+.accordionIcons{
+    margin: 5px 15px;
+    font-size: 2rem;
+}
+
+
+@media only screen and (min-width: 651px) and (max-width: 960px){
+/* -----------Seccion mas beneficios */
+
+.masBeneficiosPadre{
+
+    grid-template-columns: repeat(2, 6fr) ;
+    grid-template-rows: repeat(3, 275px);
+
+}
+
+}
+
+@media only screen and (max-width: 650px){
+/* -----------Seccion mas beneficios */
+
+.masBeneficiosPadre{
+
+    grid-template-columns: repeat(1, 6fr) ;
+    grid-template-rows: repeat(6, 275px);
+
+}
+
+#accordionExample, .accordion-item{
+    width: 95%;
+}
+
+/* Seccion beneficios en bootstrap */
+
+.accordionIcons{
+  font-size: 1.4rem;
+}
+
+}

@@ -1,0 +1,244 @@
+.divServicios{
+    align-self:center;
+}
+
+#beneficios{
+text-align: center;
+vertical-align: middle;
+}
+
+.padreSeccionGeneral{
+display: flex;
+width: 100%;
+justify-content: center;
+}
+
+.serviciosSeccionGeneral{
+display: grid;
+width: 70%;
+gap: 20px 100px;
+grid-template-columns: repeat(3, 3fr);
+grid-template-rows: repeat(3, 3fr);
+grid-template-areas: 
+"servicio1 servicio4 servicio6"
+"servicio2 servicio4 servicio7"
+"servicio3 servicio5 servicio8";
+justify-items: center;
+justify-content: center;
+margin-top: 50px;
+
+}
+
+
+.colorIcono{
+color: #339853;
+padding: 50px 0px 20px 0px;
+
+}
+
+.colorIcono:hover{
+color: #4bda78 ;
+transform: scale(0.9);
+transition: all 2s;
+
+}
+.centrarServ{
+padding: 0.2fr;
+width: 1fr;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+min-width: 250px;
+
+
+}
+.servicio1{
+grid-area: servicio1;
+}
+
+.servicio2{
+grid-area: servicio2;
+}
+.servicio3{
+grid-area: servicio3;
+}
+.servicio4{
+grid-area: servicio4;
+}
+.capturaPantallaApp{
+margin-top: 50px;
+max-width: 80%;
+height: auto;
+}
+.servicio5{
+grid-area: servicio5;
+
+}
+.servicio6{
+grid-area: servicio6;
+
+}
+.servicio7{
+grid-area: servicio7;
+
+}
+.servicio8{
+grid-area: servicio8;
+
+}
+
+.serviciosSeccionGeneral div p {
+padding: 20px 0px;
+color: #A4A3A3;
+}
+
+
+/* ---------------------- Seccion Separador tipo mockup */
+/* sEPARADOR TIPO MOCKUP VERSION 2 */
+
+.sepradorPadre1{
+    width: 100%;
+    height: 400px;
+   
+}
+
+.separadorPadre2{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/backgroundMockupApp.png") ;
+    background-position: 200% 63%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    position: relative;
+    
+}
+
+.separadorCentral{
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    
+}
+
+.separadorCentral h3{
+    font-size: 26px;
+    margin: 10px 5px;
+    text-align: start;
+
+}
+
+.separadorCentral p{
+    margin: 5px;
+    font-size: 16px;
+    text-align: start;
+}
+
+
+.img1{
+    width: 100%;
+    
+}
+
+
+@media only screen and (min-width: 651px) and (max-width: 960px){
+
+ 
+    /* -----------------seccion servicios */
+
+    .serviciosSeccionGeneral{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "servicio4 servicio1"
+        "servicio4 servicio2"
+        "servicio3 servicio5"
+        "servicio6 servicio7"
+        "servicio8 servicio8"; 
+    }
+
+
+    /* ----------------------seccion separador mockup */
+    .separadorPadre2{
+
+        background-position: -70% 73%;
+        background-size: 130%;
+ 
+        
+    }
+    .separadorCentral{
+        transform: translate(-35%, -50%);
+        width: 50%;
+        
+    }
+    .separadorCentral h3{
+        font-size: 26px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+    
+    }
+    
+    .separadorCentral p{
+        font-size: 16px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+ /* -------------------- seccion servicios */
+ .serviciosSeccionGeneral{
+       
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "servicio1"
+    "servicio2"
+    "servicio3"
+    "servicio4"
+    "servicio4"
+    "servicio5"
+    "servicio6"
+    "servicio7"
+    "servicio8";
+       
+
+}
+
+.listaTres{
+    display: none;
+}
+.listaDos{
+    display: none;
+}
+
+/*----------------- SECCION SEPARADOR MOCKUP  */
+.separadorPadre2{
+    background-position: -10% 70%;
+    background-size: 300%;
+}
+
+.separadorCentral{
+    transform: translate(-20%, -50%);
+    width: 80%;
+}
+
+.separadorCentral h3{
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+}
+
+.separadorCentral p{
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+
+}
+.separadorCentral .btn{
+    padding: 5px
+}
+}

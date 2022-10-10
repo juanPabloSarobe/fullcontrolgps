@@ -1,0 +1,187 @@
+/* @import "../base/variables";
+@import"../base/estilosGenerales.scss";
+ */
+
+.header {
+    position: sticky;
+    top: -50px;
+    width: 100%;
+    z-index: 10;
+
+    @media only screen and (max-width: $smartphones) {
+        top: -70px;
+    }
+
+
+    .listaUno {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px;
+        align-items: center;
+
+
+
+        .inlineGeneral {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                color: #424243;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+
+
+                @media only screen and (max-width: $smartphones) {
+                    font-size: 14px;
+
+                }
+
+                .logoEspacios {
+                    margin: 0px 25px;
+
+                }
+                
+                .imgWapp {
+                    width: 40px;
+                    height: 40px;
+
+
+                    @media only screen and (max-width: $smartphones) {
+                        /* ----------------------------seccion header */
+
+                        width: 30px;
+                        height: 30px;
+
+                    }
+
+                }
+
+            }
+
+            .logoAndroid {
+                margin: 0px 30px;
+
+            }
+
+
+        }
+    }
+
+    .menuStyle {
+        padding-top: 5px;
+        top: 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+
+        @media only screen and (max-width: $smartphones) {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+    
+
+
+        .listaDos {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+            margin: 10px;
+            align-items: center;
+                    
+            @media only screen and (max-width: $smartphones) {
+                display: none;
+            }
+
+            .listaTres {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                        
+                @media only screen and (max-width: $smartphones) {
+                    display: none;
+                }
+
+                .itemLista {
+                    margin: 0px 20px;
+
+                    a {
+                        transition: all 0.3s ease;
+                        text-decoration: none;
+                        color: #2A2929;
+
+                        &:hover {
+                            transition: all 0.3s ease;
+                            text-decoration: none;
+                            /*     background-color: #edecec; */
+                            color: #02918d;
+
+                        }
+
+
+
+
+                    }
+
+
+                }
+
+
+            }
+
+        }
+    }
+
+    
+
+    @media only screen and (min-width: $smartphones) and (max-width: $tablet) {
+
+
+
+        /* ----------------------------seccion header */
+        ul {
+            list-style: none;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+
+        }
+
+    }
+
+
+
+
+    @media only screen and (max-width: $smartphones) {
+
+        .logoAndroid {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .logoFullcontrol {
+            margin: 5px auto 0px auto;
+        }
+
+
+        .divAcceder {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btnAcceder {
+            margin: 10px;
+            padding: 5px 100px;
+
+        }
+
+    }
+
+}

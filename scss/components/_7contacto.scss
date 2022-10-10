@@ -1,0 +1,129 @@
+/* -------------------Section Contactos */
+
+
+
+
+.contactos{
+
+    background-color: #424243;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contactoRedes{
+    width: 50%;
+    padding: 25px;
+
+}
+
+.contactoRedes ul li{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin: 25px;
+    align-items: center;
+}
+
+.contactoRedes ul li i{
+    margin-right: 15px;
+}
+
+.contactoInput{
+    width: 40%;
+    margin: 25px;
+    font-size: larger;
+    font-family: "roboto";
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+#mensaje {
+    font-size: larger;
+    font-family: "roboto";
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    width: 90%; 
+    height: 100px;
+    margin: 25px;
+    
+}
+.contactoMsg{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.contactoMsg a {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.btnEnviar{
+    margin: 25px;
+    padding: 10px 100px;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 651px) and (max-width: 960px){
+/* ---------------- seccion contacto */
+    
+.contactos{
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.contactoInput{
+    width: 90%;
+}
+
+
+}
+
+@media only screen and (max-width: 650px){
+ /* ---------------- seccion contacto */
+ .contactos{
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+.contactoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactoMsg{
+    align-items: center;
+}
+
+.contactoInput{
+
+    width: 80%;
+}
+.contactoRedes {
+    width: 100%;
+    overflow: hidden;
+    padding: 2px;
+}
+.contactoRedes ul{
+    margin: 5px;
+}
+.contactoRedes ul li p{
+    font-size: 14px;
+}
+
+#mensaje {
+    width: 80%; 
+    margin: 15px;
+   
+}
+}

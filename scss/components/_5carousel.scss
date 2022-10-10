@@ -1,0 +1,150 @@
+/* ------------------- Seccion separador Carrousel */
+
+
+.carousel-inner .img-fluid{
+    width:100%;
+    height:100%;
+    position: relative;
+  }
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.testingDIV{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 580px;
+    margin: 30px auto;
+}
+
+
+
+
+.carouselrPadre1{
+    width: 100%;
+    height: 580px;
+   
+}
+
+.carouselPadre2{
+    width: 100%;
+    height: 580px;
+    background-image: url("../images/mockupDashboardv3.png") ;
+    background-position: 200% 63%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    position: relative;
+    
+}
+.img2{
+    background-image: url("../images/mockupRankingv3.png")  ;
+    background-position: -100% 63%;
+    background-size: 80%;
+}
+.img3{
+    background-image: url("../images/MockupInformesV2.png")  ;    
+}
+.caruselPadre3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000082;
+}
+
+.carouselCentral{
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    
+}
+.carouselCentralDer{
+    transform: translate(100%, -50%);
+    
+}
+
+.carouselCentral h3{
+    font-size: 26px;
+    margin: 10px 5px;
+    text-align: start;
+
+}
+
+.carouselCentral p{
+    margin: 5px;
+    font-size: 16px;
+    text-align: start;
+}
+
+
+@media only screen and (min-width: 651px) and (max-width: 960px){
+
+    .carouselPadre2{
+
+        background-position: -70% 73%;
+        background-size: 130%;
+ 
+        
+    }
+    .carouselCentral{
+        transform: translate(-35%, -50%);
+        width: 50%;
+        
+    }
+    .carouselCentral h3{
+        font-size: 26px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+    
+    }
+    
+    .carouselCentral p{
+        font-size: 16px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+
+    .carouselPadre2{
+        background-position: 30% 70%;
+        background-size: 250%;
+        background-image: url("../images/mockupDashboardv4.png") ;
+
+    }
+    .carouselCentral{
+        transform: translate(-20%, -50%);
+        width: 80%;
+    }
+
+    .carouselCentral h3{
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+    }
+    
+    .carouselCentral p{
+        text-align:justify ;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+
+    }
+    .carouselCentral .btn{
+        padding: 5px
+    }
+    .img2{
+        background-position: 40% 80%;
+        background-image: url("../images/mockupRankingv2.png")  ;
+    }
+    .img3{
+        background-position: 100% 63%;
+        background-image: url("../images/MockupInformesV2.png")  ;    
+    }
+}
