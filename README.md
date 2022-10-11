@@ -67,7 +67,10 @@ Paso a describir los pasos en la tercera etapa:<br>
 3b) Al crear un repositorio nuevo tampoco pude solucionar el problema, por lo cual se decidió borrar la carpeta oculta .git, esto originó que perdieramos el historial de las ramas que habiamos creado, ya que ya no estaban disponibles en github ni en git.<br>
 3c) Por último se optó por comenzar el proyecto desde una carpeta fuera de Google Drive, eliminar la carpeta node_modules, eliminar todos los archivos desktop.ini y volver a instalar Node y SASS.<br>
 3d) Al intentar instalar Sass en la PC de mi casa, no pude hacerlo, asi que en vez de perder tiempo y para aprovechar el fin de semana largo, se optó por resolverlo instalando la Extensión "live Sass Compiler". si bien al principio funcionaba bien, luego la misma comenzo a traer muchos problemas dado que no compilaba bien y tenia que reiniciar visual para ver impactado cada cambio....(otro dolor de cabeza).<br>
-3e) Finalmente, se optó por eliminar la extensión, y volver a instalar Sass en la pc de la oficina. pudiendo resolver los problemas de compilación. 
+3e) Finalmente, se optó por eliminar la extensión, y volver a instalar Sass en la pc de la oficina. pudiendo resolver los problemas de compilación. <br>
+4) descripcion SEO:
+
+
 
 </p>
 
