@@ -22,7 +22,7 @@
 
 
     .borde {
-        border: solid 2px #339853;
+        border: solid 2px $iconColor;
         overflow: hidden;
         position: relative;
 
@@ -46,7 +46,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #339853;
+            background-color: $iconColor;
             transform: translateY(100%);
             transition: all 0.4s ease-out;
             z-index: 3;
@@ -99,7 +99,7 @@
 }
 
 .colorIcono2 {
-    color: #339853;
+    color: $iconColor;
 }
 
 
@@ -141,7 +141,7 @@
 }
 
 .accordionButtonColor {
-    background-color: #339853;
+    background-color: $iconColor;
 
 }
 

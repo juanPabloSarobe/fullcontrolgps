@@ -117,11 +117,11 @@
 
 
         .colorIcono {
-            color: #339853;
+            color: $iconColor;
             padding: 50px 0px 20px 0px;
 
             &:hover {
-                color: #4bda78;
+                color: $mainColor;
                 transform: scale(0.9);
                 transition: all 2s;
 
@@ -189,12 +189,12 @@
 
                 @media only screen and (min-width: $smartphones) and (max-width: $tablet) {
                     font-size: 26px;
-                    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+                    text-shadow: 1px 1px 2px black, 0 0 1em $iconColor, 0 0 0.2em $iconColor;
                 }
 
                 @media only screen and (max-width: $smartphones) {
                     font-size: 24px;
-                    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+                    text-shadow: 1px 1px 2px black, 0 0 1em $iconColor, 0 0 0.2em $iconColor;
                 }
 
 
@@ -207,12 +207,12 @@
 
                 @media only screen and (min-width: $smartphones) and (max-width: $tablet) {
                     font-size: 16px;
-                    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+                    text-shadow: 1px 1px 2px black, 0 0 1em $iconColor, 0 0 0.2em $iconColor;
                 }
 
                 @media only screen and (max-width: $smartphones) {
                     font-size: 14px;
-                    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+                    text-shadow: 1px 1px 2px black, 0 0 1em $iconColor, 0 0 0.2em $iconColor;
 
                 }
 
