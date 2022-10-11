@@ -17,6 +17,15 @@
 <p align="left">
 </p>
 <h3 align="left">Observaciones del proyecto:</h3>
+<h4 align="left">Preentrega 1</h4>
+<p align="left">Se diseño una landing page para reemplazar la que actualmente tengo en mi negocio. El objetivo será tener una nueva versión mas moderna. Se pone copia de la página web actual y la que usamos de referencia para la nueva.
+La seccion de Servicios se creo con contenedores de colores para probar el fucionamiento y alcances del box modeling.
+La sección mas beneficios se reservó el lugar para cuando aprendamos a hacer carrousel y cuando incorporemos flexbox.
+A modo de complemento se colocaron 2 accesos reales a nuestra pagina web y nuetra APP de android, asi como tambien 2 html provisorios separados de la landing para hacer pruebas con el funcionamiento de los link del footer y header.
+Se hizo incapie en la estructura y prolijidad del código,tanto HTML como CSS, asi como tambien en los comentarios y el uso de carpetas para mantener el orden.
+Sarobe Juan Pablo
+06/09 12:33
+</p>
 <p align="left">1) se creo la carpeta backup, donde se fueron guardando las diferentes copias a medida que se hacian pruebas.<br>
 2) Se instalo node, npm y se crearon los archivos package.json y package-lock.json. Los mismos no se subieron al repositorio de github dado que en clase recomendaron como buena practiva no hacerlos. no obstante se creo una carpeta de "archivosComplementarios" donde se guardó una copia.<br>
 3) En lo que respecta a SASS, tuve varios problemas al implementarlo, los cuales se detalla a continuación:<br>
