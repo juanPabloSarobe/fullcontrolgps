@@ -945,6 +945,13 @@ html ul {
   margin: 10px 40px 40px 40px;
   text-align: justify;
 }
+@media only screen and (max-width: 650px) {
+  .footer .terminos {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer .disclaimImages {
   margin-top: 20px;
 }
@@ -988,28 +995,22 @@ html ul {
   vertical-align: middle;
   text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff;
 }
-
-.imgError {
+.errorColumn .imgError {
   height: 500px;
   vertical-align: top;
   padding: 0px 25%;
 }
-
-#errorTitle {
+@media only screen and (max-width: 650px) {
+  .errorColumn .imgError {
+    height: 400px;
+    padding: 0px;
+  }
+}
+.errorColumn #errorTitle {
   text-align: start;
   font-size: xx-large;
 }
 
-@media only screen and (max-width: 650px) {
-  /* ---------------- Pagina error */
-  .imgError {
-    height: 400px;
-    padding: 0px;
-  }
-  .terminos {
-    margin: 0px;
-  }
-}
 .terminosTitle {
   margin: 40px;
   text-align: justify;

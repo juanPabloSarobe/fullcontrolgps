@@ -1,43 +1,22 @@
-
-.errorColumn{
+.errorColumn {
     display: inline-block;
     width: 49%;
     vertical-align: middle;
-    text-shadow:  0 0 1em #ffffff, 0 0 0.2em #ffffff;
+    text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff;
 
-    
-}
+    .imgError {
+        height: 500px;
+        vertical-align: top;
+        padding: 0px 25%;
 
-
-.imgError{
-    height: 500px;
-    vertical-align:top ;
-    padding:0px 25%;
-}
-
-#errorTitle{
-    text-align: start;
-    font-size: xx-large;
-}
-
-
-
-@media only screen and (min-width: 651px) and (max-width: 960px){
-
-
-}
-
-@media only screen and (max-width: 650px){
-    /* ---------------- Pagina error */
-
-    
-    .imgError{
-        height: 400px;
-        padding: 0px;
-    
+        @media only screen and (max-width: $smartphones) {
+            height: 400px;
+            padding: 0px;
+        }
     }
-    .terminos{
-    
-        margin: 0px; 
+
+    #errorTitle {
+        text-align: start;
+        font-size: xx-large;
     }
 }
