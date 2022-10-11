@@ -931,46 +931,34 @@ html ul {
   }
 }
 
-/* ------------- footer */
 .footer {
   background-color: #2A2929;
   width: auto;
   display: block;
 }
-
-.footerImg {
+.footer .footerImg {
   margin: 15px;
 }
-
-.terminosTitle {
-  margin: 40px;
-  text-align: justify;
-}
-
-.terminos {
+.footer .terminos {
   color: #999999;
   text-decoration: none;
   margin: 10px 40px 40px 40px;
   text-align: justify;
 }
-
-.disclaimImages {
+.footer .disclaimImages {
   margin-top: 20px;
 }
-
-.disclaimImages p {
+.footer .disclaimImages p {
   text-align: center;
   color: #999999;
 }
-
-.derechos {
+.footer .derechos {
   text-align: center;
   font-style: italic;
   vertical-align: bottom;
   background-color: black;
 }
-
-.derechos p {
+.footer .derechos p {
   color: white;
 }
 
@@ -983,19 +971,17 @@ html ul {
   width: 40px;
   height: 40px;
 }
-
 .floatWapp img {
   width: 80px;
   height: 80px;
 }
-
 @media only screen and (max-width: 650px) {
-  /* --------------------BOTON FLOTANTE WAPP */
   .floatWapp img {
     width: 60px;
     height: 60px;
   }
 }
+
 .errorColumn {
   display: inline-block;
   width: 49%;
@@ -1023,4 +1009,8 @@ html ul {
   .terminos {
     margin: 0px;
   }
+}
+.terminosTitle {
+  margin: 40px;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
