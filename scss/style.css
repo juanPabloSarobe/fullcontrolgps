@@ -64,10 +64,14 @@ html ul {
   height: 100px;
   padding: 30px;
 }
+@media only screen and (max-width: 650px) {
+  .separadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-/* @import "../base/variables";
-@import"../base/estilosGenerales.scss";
- */
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -171,9 +175,6 @@ html ul {
   color: #02918d;
 }
 @media only screen and (min-width: 650px) and (max-width: 960px) {
-  .header {
-    /* ----------------------------seccion header */
-  }
   .header ul {
     list-style: none;
     font-family: "Noto Sans", sans-serif;
@@ -237,6 +238,12 @@ html ul {
     width: 100%;
   }
 }
+@media only screen and (max-width: 650px) {
+  .presentacionSection .presentacionPadre .videoClass {
+    width: 100%;
+    top: 15%;
+  }
+}
 .presentacionSection .presentacionPadre .videoClass .videoPresentacion {
   width: 100%;
   height: 100%;
@@ -258,11 +265,53 @@ html ul {
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
 }
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo {
+    top: 0%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo {
+    top: 5%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
 .presentacionSection .presentacionPadre .presentacionTitulo .titulo {
   font-size: 55px;
   font-family: "Noto Sans", sans-serif;
   letter-spacing: -1px;
   text-shadow: 1px 1px 2px black, 0 0 1em #ffffff, 0 0 0.2em #ffffff;
+}
+@media only screen and (max-width: 650px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo .titulo {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo .titulo h1,
+.presentacionSection .presentacionPadre .presentacionTitulo .titulo h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo .titulo h1,
+.presentacionSection .presentacionPadre .presentacionTitulo .titulo h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .presentacionSection .presentacionPadre .presentacionTitulo {
+    font-size: 2rem;
+  }
 }
 .presentacionSection .presentacionPadre .presentacionTitulo .presentacionLeyenda {
   display: flex;
@@ -275,57 +324,16 @@ html ul {
   letter-spacing: 0px;
   text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff;
 }
-
 @media only screen and (min-width: 650px) and (max-width: 960px) {
-  /* -----------------------seccion presentacion */
-  .presentacionTitulo {
-    top: 0%;
-    height: 100%;
-    flex-direction: column;
-  }
-  .titulo {
-    font-size: 2rem;
-  }
-  h1, .titulo h2 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 2rem;
-    letter-spacing: -1px;
-  }
-  .presentacionLeyenda {
-    display: flex;
+  .presentacionSection .presentacionPadre .presentacionTitulo .presentacionLeyenda {
     justify-content: flex-start;
     width: 100%;
-    align-items: flex-end;
     font-size: 18px;
     text-align: end;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* -----------------------seccion presentacion */
-  .presentacionSection {
-    height: 65vh;
-  }
-  .videoClass {
-    width: 100%;
-    top: 15%;
-  }
-  .presentacionTitulo {
-    top: 5%;
-    height: 100%;
-    flex-direction: column;
-  }
-  .titulo {
-    font-size: 1.6rem;
-  }
-  h1, .titulo h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.6rem;
-  }
-  .presentacionLeyenda {
-    display: flex;
+  .presentacionSection .presentacionPadre .presentacionTitulo .presentacionLeyenda {
     justify-content: flex-start;
     width: 100%;
     align-items: flex-end;
@@ -335,6 +343,7 @@ html ul {
     padding-bottom: 15%;
   }
 }
+
 .divServicios {
   align-self: center;
 }
@@ -349,8 +358,7 @@ html ul {
   width: 100%;
   justify-content: center;
 }
-
-.serviciosSeccionGeneral {
+.padreSeccionGeneral .serviciosSeccionGeneral {
   display: grid;
   width: 70%;
   gap: 20px 100px;
@@ -361,19 +369,21 @@ html ul {
   justify-content: center;
   margin-top: 50px;
 }
-
-.colorIcono {
-  color: #339853;
-  padding: 50px 0px 20px 0px;
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .padreSeccionGeneral .serviciosSeccionGeneral {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "servicio4 servicio1" "servicio4 servicio2" "servicio3 servicio5" "servicio6 servicio7" "servicio8 servicio8";
+  }
 }
-
-.colorIcono:hover {
-  color: #4bda78;
-  transform: scale(0.9);
-  transition: all 2s;
+@media only screen and (max-width: 650px) {
+  .padreSeccionGeneral .serviciosSeccionGeneral {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "servicio1" "servicio2" "servicio3" "servicio4" "servicio4" "servicio5" "servicio6" "servicio7" "servicio8";
+  }
 }
-
-.centrarServ {
+.padreSeccionGeneral .serviciosSeccionGeneral .centrarServ {
   padding: 0.2fr;
   width: 1fr;
   display: flex;
@@ -382,48 +392,47 @@ html ul {
   text-align: center;
   min-width: 250px;
 }
-
-.servicio1 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio1 {
   grid-area: servicio1;
 }
-
-.servicio2 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio2 {
   grid-area: servicio2;
 }
-
-.servicio3 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio3 {
   grid-area: servicio3;
 }
-
-.servicio4 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio4 {
   grid-area: servicio4;
 }
-
-.capturaPantallaApp {
+.padreSeccionGeneral .serviciosSeccionGeneral .capturaPantallaApp {
   margin-top: 50px;
   max-width: 80%;
   height: auto;
 }
-
-.servicio5 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio5 {
   grid-area: servicio5;
 }
-
-.servicio6 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio6 {
   grid-area: servicio6;
 }
-
-.servicio7 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio7 {
   grid-area: servicio7;
 }
-
-.servicio8 {
+.padreSeccionGeneral .serviciosSeccionGeneral .servicio8 {
   grid-area: servicio8;
 }
-
-.serviciosSeccionGeneral div p {
+.padreSeccionGeneral .serviciosSeccionGeneral div p {
   padding: 20px 0px;
   color: #A4A3A3;
+}
+.padreSeccionGeneral .serviciosSeccionGeneral .colorIcono {
+  color: #339853;
+  padding: 50px 0px 20px 0px;
+}
+.padreSeccionGeneral .serviciosSeccionGeneral .colorIcono:hover {
+  color: #4bda78;
+  transform: scale(0.9);
+  transition: all 2s;
 }
 
 /* ---------------------- Seccion Separador tipo mockup */
@@ -432,8 +441,7 @@ html ul {
   width: 100%;
   height: 400px;
 }
-
-.separadorPadre2 {
+.sepradorPadre1 .separadorPadre2 {
   width: 100%;
   height: 400px;
   background-image: url("../images/backgroundMockupApp.png");
@@ -443,8 +451,19 @@ html ul {
   background-clip: padding-box;
   position: relative;
 }
-
-.separadorCentral {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .sepradorPadre1 .separadorPadre2 {
+    background-position: -70% 73%;
+    background-size: 130%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .sepradorPadre1 .separadorPadre2 {
+    background-position: -10% 70%;
+    background-size: 300%;
+  }
+}
+.sepradorPadre1 .separadorPadre2 .separadorCentral {
   text-align: left;
   color: white;
   position: absolute;
@@ -452,94 +471,66 @@ html ul {
   left: 25%;
   transform: translate(-50%, -50%);
   width: 30%;
+  /* @media only screen and (max-width: $smartphones) {
+      & .btn {
+          padding: 5px
+      }
+  } */
 }
-
-.separadorCentral h3 {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral {
+    transform: translate(-35%, -50%);
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral {
+    transform: translate(-20%, -50%);
+    width: 80%;
+  }
+}
+.sepradorPadre1 .separadorPadre2 .separadorCentral h3 {
   font-size: 26px;
   margin: 10px 5px;
   text-align: start;
 }
-
-.separadorCentral p {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral h3 {
+    font-size: 26px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral h3 {
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+  }
+}
+.sepradorPadre1 .separadorPadre2 .separadorCentral p {
   margin: 5px;
   font-size: 16px;
   text-align: start;
 }
-
-.img1 {
-  width: 100%;
-}
-
-@media only screen and (min-width: 651px) and (max-width: 960px) {
-  /* -----------------seccion servicios */
-  .serviciosSeccionGeneral {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "servicio4 servicio1" "servicio4 servicio2" "servicio3 servicio5" "servicio6 servicio7" "servicio8 servicio8";
-  }
-  /* ----------------------seccion separador mockup */
-  .separadorPadre2 {
-    background-position: -70% 73%;
-    background-size: 130%;
-  }
-  .separadorCentral {
-    transform: translate(-35%, -50%);
-    width: 50%;
-  }
-  .separadorCentral h3 {
-    font-size: 26px;
-    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
-  }
-  .separadorCentral p {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral p {
     font-size: 16px;
     text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
   }
 }
 @media only screen and (max-width: 650px) {
-  /* -------------------- seccion servicios */
-  .serviciosSeccionGeneral {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "servicio1" "servicio2" "servicio3" "servicio4" "servicio4" "servicio5" "servicio6" "servicio7" "servicio8";
-  }
-  .listaTres {
-    display: none;
-  }
-  .listaDos {
-    display: none;
-  }
-  /*----------------- SECCION SEPARADOR MOCKUP  */
-  .separadorPadre2 {
-    background-position: -10% 70%;
-    background-size: 300%;
-  }
-  .separadorCentral {
-    transform: translate(-20%, -50%);
-    width: 80%;
-  }
-  .separadorCentral h3 {
-    font-size: 24px;
-    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
-  }
-  .separadorCentral p {
+  .sepradorPadre1 .separadorPadre2 .separadorCentral p {
     font-size: 14px;
     text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
   }
-  .separadorCentral .btn {
-    padding: 5px;
-  }
 }
+
+/* 
+    .img1 {
+        width: 100%;
+
+    }
+ */
 /* ------------------seccion Mas beneficios */
-.borde {
-  border: solid 2px #339853;
-  overflow: hidden;
-  position: relative;
-}
-
-.colorIcono2 {
-  color: #339853;
-}
-
 .masBeneficiosPadre {
   width: 80%;
   max-width: 1250px;
@@ -550,8 +541,24 @@ html ul {
   gap: 20px;
   overflow: hidden;
 }
-
-.beneficioTitulo {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .masBeneficiosPadre {
+    grid-template-columns: repeat(2, 6fr);
+    grid-template-rows: repeat(3, 275px);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .masBeneficiosPadre {
+    grid-template-columns: repeat(1, 6fr);
+    grid-template-rows: repeat(6, 275px);
+  }
+}
+.masBeneficiosPadre .borde {
+  border: solid 2px #339853;
+  overflow: hidden;
+  position: relative;
+}
+.masBeneficiosPadre .borde .beneficioTitulo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -561,13 +568,11 @@ html ul {
   align-items: center;
   justify-content: center;
 }
-
-h4 {
+.masBeneficiosPadre .borde .beneficioTitulo h4 {
   margin-top: 15px;
   font-size: 21px;
 }
-
-.beneficioDetalleGeneral {
+.masBeneficiosPadre .borde .beneficioDetalleGeneral {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -581,50 +586,49 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-
-.beneficioDetalleGeneral p {
+.masBeneficiosPadre .borde .beneficioDetalleGeneral p {
   margin-top: 15px;
   width: 80%;
 }
-
-.beneficioTitulo1:hover .beneficioDetalle1 {
+.masBeneficiosPadre .beneficio1:hover .beneficioDetalle1 {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+.masBeneficiosPadre .beneficio2:hover .beneficioDetalle2 {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+.masBeneficiosPadre .beneficio3:hover .beneficioDetalle3 {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+.masBeneficiosPadre .beneficio4:hover .beneficioDetalle4 {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+.masBeneficiosPadre .beneficio5:hover .beneficioDetalle5 {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+.masBeneficiosPadre .beneficio6:hover .beneficioDetalle6 {
   transform: translateY(0%);
   transition: all 0.4s ease-in;
 }
 
-.beneficio1:hover .beneficioDetalle1 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
-}
-
-.beneficio2:hover .beneficioDetalle2 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
-}
-
-.beneficio3:hover .beneficioDetalle3 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
-}
-
-.beneficio4:hover .beneficioDetalle4 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
-}
-
-.beneficio5:hover .beneficioDetalle5 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
-}
-
-.beneficio6:hover .beneficioDetalle6 {
-  transform: translateY(0%);
-  transition: all 0.4s ease-in;
+.colorIcono2 {
+  color: #339853;
 }
 
 /* Seccion mas benefios extendida con bootstrap */
-#accordionExample, .accordion-item {
+#accordionExample,
+.accordion-item {
   width: 80%;
+}
+@media only screen and (max-width: 650px) {
+  #accordionExample,
+.accordion-item {
+    width: 95%;
+  }
 }
 
 .accordion {
@@ -635,7 +639,7 @@ h4 {
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-focus-border-color: none;
   --bs-accordion-btn-focus-box-shadow: none;
-  --bs-accordion-active-color:white;
+  --bs-accordion-active-color: white;
   --bs-accordion-active-bg: #339853;
 }
 
@@ -673,38 +677,10 @@ h4 {
   margin: 5px 15px;
   font-size: 2rem;
 }
-
-@media only screen and (min-width: 651px) and (max-width: 960px) {
-  /* -----------Seccion mas beneficios */
-  .masBeneficiosPadre {
-    grid-template-columns: repeat(2, 6fr);
-    grid-template-rows: repeat(3, 275px);
-  }
-}
 @media only screen and (max-width: 650px) {
-  /* -----------Seccion mas beneficios */
-  .masBeneficiosPadre {
-    grid-template-columns: repeat(1, 6fr);
-    grid-template-rows: repeat(6, 275px);
-  }
-  #accordionExample, .accordion-item {
-    width: 95%;
-  }
-  /* Seccion beneficios en bootstrap */
   .accordionIcons {
     font-size: 1.4rem;
   }
-}
-/* ------------------- Seccion separador Carrousel */
-.carousel-inner .img-fluid {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.carousel-item {
-  height: 100%;
-  width: 100%;
 }
 
 .testingDIV {
@@ -714,13 +690,20 @@ h4 {
   height: 580px;
   margin: 30px auto;
 }
-
-.carouselrPadre1 {
+.testingDIV .carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.testingDIV .carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 {
   width: 100%;
   height: 580px;
 }
-
-.carouselPadre2 {
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 {
   width: 100%;
   height: 580px;
   background-image: url("../images/mockupDashboardv3.png");
@@ -730,25 +713,26 @@ h4 {
   background-clip: padding-box;
   position: relative;
 }
-
-.img2 {
-  background-image: url("../images/mockupRankingv3.png");
-  background-position: -100% 63%;
-  background-size: 80%;
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 {
+    background-position: -70% 73%;
+    background-size: 130%;
+  }
 }
-
-.img3 {
-  background-image: url("../images/MockupInformesV2.png");
+@media only screen and (max-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 {
+    background-position: 30% 70%;
+    background-size: 250%;
+    background-image: url("../images/mockupDashboardv4.png");
+  }
 }
-
-.caruselPadre3 {
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .caruselPadre3 {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5098039216);
 }
-
-.carouselCentral {
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral {
   text-align: left;
   color: white;
   position: absolute;
@@ -757,98 +741,110 @@ h4 {
   transform: translate(-50%, -50%);
   width: 30%;
 }
-
-.carouselCentralDer {
-  transform: translate(100%, -50%);
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral {
+    transform: translate(-35%, -50%);
+    width: 50%;
+  }
 }
-
-.carouselCentral h3 {
+@media only screen and (max-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral {
+    transform: translate(-20%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral h3 {
   font-size: 26px;
   margin: 10px 5px;
   text-align: start;
 }
-
-.carouselCentral p {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral h3 {
+    font-size: 26px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral h3 {
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
+  }
+}
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral p {
   margin: 5px;
   font-size: 16px;
   text-align: start;
 }
-
-@media only screen and (min-width: 651px) and (max-width: 960px) {
-  .carouselPadre2 {
-    background-position: -70% 73%;
-    background-size: 130%;
-  }
-  .carouselCentral {
-    transform: translate(-35%, -50%);
-    width: 50%;
-  }
-  .carouselCentral h3 {
-    font-size: 26px;
-    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
-  }
-  .carouselCentral p {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral p {
     font-size: 16px;
     text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
   }
 }
 @media only screen and (max-width: 650px) {
-  .carouselPadre2 {
-    background-position: 30% 70%;
-    background-size: 250%;
-    background-image: url("../images/mockupDashboardv4.png");
-  }
-  .carouselCentral {
-    transform: translate(-20%, -50%);
-    width: 80%;
-  }
-  .carouselCentral h3 {
-    text-align: center;
-    font-size: 24px;
-    text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
-  }
-  .carouselCentral p {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentral p {
     text-align: justify;
     font-size: 14px;
     text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853;
   }
-  .carouselCentral .btn {
-    padding: 5px;
+}
+@media only screen and (min-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .carouselCentralDer {
+    transform: translate(100%, -50%);
   }
-  .img2 {
+}
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .img2 {
+  background-image: url("../images/mockupRankingv3.png");
+  background-position: -100% 63%;
+  background-size: 80%;
+}
+@media only screen and (max-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .img2 {
+    background-size: 250%;
     background-position: 40% 80%;
     background-image: url("../images/mockupRankingv2.png");
   }
-  .img3 {
+}
+.testingDIV .carousel-inner .carousel-item .carouselPadre1 .img3 {
+  background-image: url("../images/MockupInformesV2.png");
+}
+@media only screen and (max-width: 650px) {
+  .testingDIV .carousel-inner .carousel-item .carouselPadre1 .img3 {
     background-position: 100% 63%;
     background-image: url("../images/MockupInformesV2.png");
   }
 }
-/* -------------------Section Contactos */
+
 .contactos {
   background-color: #424243;
   display: flex;
   justify-content: space-around;
 }
-
-.contactoRedes {
-  width: 50%;
-  padding: 25px;
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .contactos {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
-
-.contactoRedes ul li {
-  display: flex;
-  justify-content: flex-start;
-  color: white;
-  margin: 25px;
-  align-items: center;
+@media only screen and (max-width: 650px) {
+  .contactos {
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+  }
 }
-
-.contactoRedes ul li i {
-  margin-right: 15px;
+@media only screen and (max-width: 650px) {
+  .contactos .contactoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-.contactoInput {
+.contactos .contactoForm .contactoInput {
   width: 40%;
   margin: 25px;
   font-size: larger;
@@ -857,8 +853,26 @@ h4 {
   border-radius: 10px;
   border: none;
 }
-
-#mensaje {
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  .contactos .contactoForm .contactoInput {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contactos .contactoForm .contactoInput {
+    width: 80%;
+  }
+}
+.contactos .contactoMsg {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 650px) {
+  .contactos .contactoMsg {
+    align-items: center;
+  }
+}
+.contactos .contactoMsg #mensaje {
   font-size: larger;
   font-family: "roboto";
   padding: 8px 16px;
@@ -868,69 +882,55 @@ h4 {
   height: 100px;
   margin: 25px;
 }
-
-.contactoMsg {
-  display: flex;
-  flex-direction: column;
-}
-
-.contactoMsg a {
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  text-decoration: none;
-}
-
-.btnEnviar {
-  margin: 25px;
-  padding: 10px 100px;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 651px) and (max-width: 960px) {
-  /* ---------------- seccion contacto */
-  .contactos {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .contactoInput {
-    width: 90%;
-  }
-}
 @media only screen and (max-width: 650px) {
-  /* ---------------- seccion contacto */
-  .contactos {
-    flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
-  }
-  .contactoForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contactoMsg {
-    align-items: center;
-  }
-  .contactoInput {
-    width: 80%;
-  }
-  .contactoRedes {
-    width: 100%;
-    overflow: hidden;
-    padding: 2px;
-  }
-  .contactoRedes ul {
-    margin: 5px;
-  }
-  .contactoRedes ul li p {
-    font-size: 14px;
-  }
-  #mensaje {
+  .contactos .contactoMsg #mensaje {
     width: 80%;
     margin: 15px;
   }
 }
+.contactos .contactoMsg a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+}
+.contactos .contactoMsg a .btnEnviar {
+  margin: 25px;
+  padding: 10px 100px;
+  text-decoration: none;
+}
+.contactos .contactoRedes {
+  width: 50%;
+  padding: 25px;
+}
+@media only screen and (max-width: 650px) {
+  .contactos .contactoRedes {
+    width: 100%;
+    overflow: hidden;
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contactos .contactoRedes ul {
+    margin: 5px;
+  }
+}
+.contactos .contactoRedes ul li {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  margin: 25px;
+  align-items: center;
+}
+.contactos .contactoRedes ul li i {
+  margin-right: 15px;
+}
+@media only screen and (max-width: 650px) {
+  .contactos .contactoRedes ul li p {
+    font-size: 14px;
+  }
+}
+
 /* ------------- footer */
 .footer {
   background-color: #2A2929;

@@ -62,4 +62,11 @@ html ul {
   text-align: center;
   height: 100px;
   padding: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .separadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=estilosGenerales.css.map */
