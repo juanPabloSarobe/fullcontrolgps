@@ -1,0 +1,26 @@
+{
+  "name": "fullcontrolgps",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Juan Pablo Sarobe</h1>\r <h3 align=\"center\">Licenciado en Administracion de Empresas.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanPabloSarobe/fullcontrolgps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanPabloSarobe/fullcontrolgps/issues"
+  },
+  "homepage": "https://github.com/juanPabloSarobe/fullcontrolgps#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
