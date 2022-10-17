@@ -39,9 +39,9 @@ html {
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   line-height: 1.3; }
-  .btnGeneral .btn:hover {
+  .btnGeneral:hover {
     background-image: linear-gradient(to top left, #34d934, green); }
-  .btnGeneral .btn:active {
+  .btnGeneral:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6); }
 
 .fstHeader {
@@ -684,17 +684,18 @@ html {
       border: none;
       width: 90%;
       height: 100px;
-      margin: 25px; }
+      margin: 25px;
+      resize: none; }
       @media only screen and (max-width: 650px) {
         .contactos .contactoMsg #mensaje {
           width: 80%;
           margin: 15px; } }
-    .contactos .contactoMsg a {
+    .contactos .contactoMsg #buttonDiv {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
       text-decoration: none; }
-      .contactos .contactoMsg a .btnEnviar {
+      .contactos .contactoMsg #buttonDiv .btnEnviar {
         margin: 25px;
         padding: 10px 100px;
         text-decoration: none; }

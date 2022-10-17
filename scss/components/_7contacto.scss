@@ -59,6 +59,7 @@
             width: 90%;
             height: 100px;
             margin: 25px;
+            resize: none;
 
             @media only screen and (max-width: $smartphones) {
                 width: 80%;
@@ -67,7 +68,7 @@
 
         }
 
-        & a {
+        & #buttonDiv {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -78,7 +79,7 @@
                 padding: 10px 100px;
                 text-decoration: none;
             }
-
+ 
         }
     }
 
