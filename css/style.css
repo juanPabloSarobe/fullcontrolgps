@@ -340,14 +340,13 @@ html {
         transition: all 2s; }
 
 /* ---------------------- Seccion Separador tipo mockup */
-/* sEPARADOR TIPO MOCKUP VERSION 2 */
 .sepradorPadre1 {
   width: 100%;
   height: 400px; }
   .sepradorPadre1 .separadorPadre2 {
     width: 100%;
     height: 400px;
-    background-image: url("../images/backgroundMockupApp.png");
+    background-image: url("../images/backgroundMockupApp.webp");
     background-position: 200% 63%;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -368,12 +367,7 @@ html {
       top: 50%;
       left: 25%;
       transform: translate(-50%, -50%);
-      width: 30%;
-      /* @media only screen and (max-width: $smartphones) {
-                & .btn {
-                    padding: 5px
-                }
-            } */ }
+      width: 30%; }
       @media only screen and (min-width: 650px) and (max-width: 960px) {
         .sepradorPadre1 .separadorPadre2 .separadorCentral {
           transform: translate(-35%, -50%);
@@ -407,12 +401,6 @@ html {
             font-size: 14px;
             text-shadow: 1px 1px 2px black, 0 0 1em #339853, 0 0 0.2em #339853; } }
 
-/* 
-    .img1 {
-        width: 100%;
-
-    }
- */
 /* ------------------seccion Mas beneficios */
 .masBeneficiosPadre {
   width: 80%;
@@ -568,7 +556,7 @@ html {
             .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 {
               background-position: 30% 70%;
               background-size: 250%;
-              background-image: url("../images/mockupDashboardv4.png"); } }
+              background-image: url("../images/mockupDashboardv4.webp"); } }
           .testingDIV .carousel-inner .carousel-item .carouselPadre1 .carouselPadre2 .caruselPadre3 {
             position: absolute;
             width: 100%;
@@ -767,22 +755,30 @@ html {
         width: 70px;
         height: 70px; } }
 
-.errorColumn {
-  display: inline-block;
-  width: 49%;
-  vertical-align: middle;
-  text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff; }
-  .errorColumn .imgError {
-    height: 500px;
-    vertical-align: top;
-    padding: 0px 25%; }
+.errorBody {
+  /* height: 100vh; */ }
+  .errorBody .errorSection {
+    height: 100%;
+    margin: 50px auto; }
     @media only screen and (max-width: 650px) {
-      .errorColumn .imgError {
-        height: 400px;
-        padding: 0px; } }
-  .errorColumn #errorTitle {
-    text-align: start;
-    font-size: xx-large; }
+      .errorBody .errorSection {
+        margin: 5px auto; } }
+    .errorBody .errorSection .errorColumn {
+      display: inline-block;
+      width: 49%;
+      vertical-align: middle;
+      text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff; }
+      .errorBody .errorSection .errorColumn .imgError {
+        height: 500px;
+        vertical-align: top;
+        padding: 0px 25%; }
+        @media only screen and (max-width: 650px) {
+          .errorBody .errorSection .errorColumn .imgError {
+            height: 400px;
+            padding: 0px; } }
+      .errorBody .errorSection .errorColumn #errorTitle {
+        text-align: start;
+        font-size: xx-large; }
 
 .terminosTitle {
   margin: 40px;

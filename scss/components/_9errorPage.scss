@@ -1,22 +1,33 @@
-.errorColumn {
-    display: inline-block;
-    width: 49%;
-    vertical-align: middle;
-    text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff;
+.errorBody {
+    /* height: 100vh; */
 
-    .imgError {
-        height: 500px;
-        vertical-align: top;
-        padding: 0px 25%;
-
+    .errorSection {
+        height: 100%;
+        margin: 50px auto;
         @media only screen and (max-width: $smartphones) {
-            height: 400px;
-            padding: 0px;
+            margin: 5px auto;
         }
-    }
+        .errorColumn {
+            display: inline-block;
+            width: 49%;
+            vertical-align: middle;
+            text-shadow: 0 0 1em #ffffff, 0 0 0.2em #ffffff;
 
-    #errorTitle {
-        text-align: start;
-        font-size: xx-large;
+            .imgError {
+                height: 500px;
+                vertical-align: top;
+                padding: 0px 25%;
+
+                @media only screen and (max-width: $smartphones) {
+                    height: 400px;
+                    padding: 0px;
+                }
+            }
+
+            #errorTitle {
+                text-align: start;
+                font-size: xx-large;
+            }
+        }
     }
 }
